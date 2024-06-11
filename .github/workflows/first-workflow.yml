@@ -15,5 +15,5 @@ jobs:
     runs-on: macos-latest       
     steps:
      - name: get SW version 
-       run: sw -vers
+       run: sw_vers
   
