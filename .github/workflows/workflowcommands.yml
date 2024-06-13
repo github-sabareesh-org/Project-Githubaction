@@ -4,6 +4,6 @@ jobs:
   testing-wf-commanmds:
     runs-on: ubuntu-latest
     steps:
-        - name: setting an error message
-          run: echo "::error::missing a semicolon"
+        - name: setting an error message with parameter
+          run: echo "::error title=Error in file,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing semicolon"
    
