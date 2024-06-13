@@ -1,0 +1,9 @@
+name: workslfowcommands
+on: [push]
+jobs:
+  testing-wf-commanmds:
+    runs-on: ubuntu-latest
+    steps:
+        - name: setting an error message
+          run: echo "::error::missing a semicolon"
+   
