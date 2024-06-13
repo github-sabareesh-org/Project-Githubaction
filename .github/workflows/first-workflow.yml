@@ -12,7 +12,8 @@ jobs:
         npm -v
  #second job       
  parallel-workflows:
-    runs-on: macos-latest       
+    runs-on: macos-latest 
+    needs:     run-shell-commands  
     steps:
      - name: get SW version 
        run: sw_vers
