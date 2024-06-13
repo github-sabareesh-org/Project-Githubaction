@@ -8,8 +8,8 @@ jobs:
       run: echo "Hello world"
     - name: Multiline command 
       run: |
-        node -v
-        npm -v
+        node -version
+        npm -version 
  #second job       
  parallel-workflows:
     runs-on: macos-latest 
