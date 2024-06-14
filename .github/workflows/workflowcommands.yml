@@ -5,5 +5,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: setting an error message with parameter
-          run: echo "::error title=Error in file,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing semicolon"
+          run: echo "::error title=Error in file,
+             file=app.js,line=2,endLine=3,col=5,
+             endColumn=7::Missing semicolon"
+             echo "::debug title=Error in file,
+             file=app.js,line=2,endLine=3,col=5,
+             endColumn=7::Missing semicolon"
+
+             echo "::notice title=Error in file,
+             file=app.js,line=2,endLine=3,col=5,
+             endColumn=7::Missing semicolon"
+
+             echo "::warning title=Error in file,
+             file=app.js,line=2,endLine=3,col=5,
+             endColumn=7::Missing semicolon"
+
    
