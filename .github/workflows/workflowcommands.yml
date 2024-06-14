@@ -38,5 +38,5 @@ jobs:
       MY_NAME: "GitHub-Action"
     steps:
       - name: my name 
-        run: echo "$MY_NAME"  
+        run: echo "::add-mask::$MY_NAME"  
    
