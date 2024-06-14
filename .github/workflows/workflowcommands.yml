@@ -32,4 +32,11 @@ jobs:
              endColumn=7::Missing semicolon"
             echo "::endgroup"
 
+  masking-the-value:
+    runs-on: ubuntu-latest
+    env:
+      MY_NAME: "GitHub-Action"
+    steps:
+      - name: my name 
+        run: echo "$MY_NAME"  
    
