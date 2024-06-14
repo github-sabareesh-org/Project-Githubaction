@@ -20,4 +20,10 @@ jobs:
              file=app.js,line=2,endLine=3,col=5,
              endColumn=7::Missing semicolon"
 
+        - name: Group of log lines
+          run: |
+            echo "::group::Title of errors"
+            echo "inside the group"
+            echo "::endgroup"
+
    
