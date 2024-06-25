@@ -1,0 +1,11 @@
+name: workflow_run
+#I want to run this workflow when the Repevents workflow is completed
+on:
+    workflow_run: 
+        workflows: [Repo-events]
+        types: [completed]
+jobs:
+    echo-string:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "I was trigered because repo events workflow is completed"  
