@@ -1,8 +1,44 @@
 name: manual-workflow
 on:
     workflow_dispatch: 
+        inputs:
+            string:
+                description: A String Input
+                type: string
+                required: true
+                default: "A default value"
+
+            number:
+                description: A number input
+                type: number
+                default: 4
+            option:
+                description: An option to select
+                type: choice
+                default: "option 3" 
+                options:
+                    - option 1
+                    - option 2
+                    - option 3
+            boolean:
+                description: A boolean option
+                required: false
+                type: boolean
+            environment:
+                description: "Environment"
+                type: environment
+                required: true
 jobs:
     log-info:
         runs-on: ubuntu-latest
         steps:
             - run: echo $GITHUB_REF
+            - run: |
+                 echo "String: ${{inputs.string}}"
+                 echo "Numbers: ${{inputs.number}}"
+                 echo "Option: ${{inputs.option}}"
+                 echo "Boolean: ${{inputs.boolean}}"
+                 echo "Envt: ${{inputs.environment}}"
+
+
+            
