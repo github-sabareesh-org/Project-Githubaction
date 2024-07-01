@@ -15,6 +15,13 @@ jobs:
             echo ${{'sting'== 'String'}}
             echo ${{true && false}}
             echo ${{true || false}}
-    
+      - name: contexts
+        run: |
+             echo ${{toJson(github)}}
+             echo ${{toJson(job)}}
+             echo ${{toJson(secrets)}}
+             echo ${{toJson(steps)}}
+             echo ${{toJson(runner)}}
+             
  
 
