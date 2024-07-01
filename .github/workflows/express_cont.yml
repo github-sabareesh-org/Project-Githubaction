@@ -13,7 +13,7 @@ jobs:
             echo ${{null}}
             echo ${{true}}
             echo ${{2>1}}
-            echo ${{'sting'== 'String'}}
+            echo ${{'string'== 'String'}}
             echo ${{true && false}}
             echo ${{true || false}}
       - name: contexts
