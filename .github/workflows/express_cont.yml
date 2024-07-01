@@ -1,5 +1,6 @@
 name: Expressions And Contexts
 on: [push,pull_request]
+run-name: "Expressions and Contexts by @${{github.actor}},events:${{github.event_name}}"
 jobs:
   using-expressions-and-contexts:
     runs-on: ubuntu-latest
