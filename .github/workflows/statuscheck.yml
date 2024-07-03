@@ -14,7 +14,7 @@ jobs:
       - name: Runs on success
         if: success()
         run: echo 'Runs on success'
-      - name: Runs on Always
+      - name: Runs on Always in the project
         if: always()
         run: echo 'Runs on always' 
       - name: Runs on Cancelled
